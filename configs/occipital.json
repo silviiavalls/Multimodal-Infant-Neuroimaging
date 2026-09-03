@@ -1,0 +1,12 @@
+{
+  "name": "Occipital probe",
+  "description": "Control-region probe over the occipital lobe, reproducing the layout shown in Figure 11a of the thesis. Low optode density by design: 2 EEG electrodes, 1 fNIRS source, 1 fNIRS detector, 1 fDCS source and 1 fDCS detector, with separations matched to the lateral probe. The physical probe also carries a rectangular accelerometer in a dedicated slot; its coordinates are not recorded in the source notebook, so it is not represented here and does not act as an obstacle in the clearance check.",
+  "width": 7.0,
+  "height": 4.0,
+  "electrodes": [[0.7, 2.25], [6.3, 2.25]],
+  "fnirs_sources": [[5.5, 3.3]],
+  "fnirs_detectors": [[3.25, 1.55]],
+  "fdcs_sources": [[3.7, 3.0]],
+  "fdcs_detectors": [[5.0, 1.65]],
+  "footprints": {"fdcs_source": 1.3, "fdcs_detector": 1.3}
+}

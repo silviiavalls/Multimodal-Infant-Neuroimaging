@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "probe-design"
+version = "1.0.0"
+description = "Computational design and automated geometric validation of multimodal EEG/fNIRS/fDCS probes for infant neuroimaging"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Silvia Valls Santafé" }]
+keywords = ["neuroimaging", "fNIRS", "fDCS", "EEG", "multimodal", "infant", "probe design"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Medical Science Apps.",
+]
+dependencies = ["matplotlib>=3.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "ruff>=0.4", "jupyter"]
+
+[project.scripts]
+probe-design = "probe_design.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+# Make the test suite runnable straight from a clone, without an install step.
+pythonpath = ["src"]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 90
+target-version = "py310"

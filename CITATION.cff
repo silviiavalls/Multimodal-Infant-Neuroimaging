@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: Multimodal Probe Design for Infant Neuroimaging
+message: If you use this software, please cite it as below.
+type: software
+authors:
+  - family-names: Valls Santafé
+    given-names: Silvia
+repository-code: "https://github.com/silviiavalls/multimodal-infant-neuroimaging"
+abstract: >-
+  Computational design and geometric validation of head-mounted probes
+  integrating EEG, fNIRS and fDCS for speech-processing research in
+  4-5-month-old infants, together with a thread-actuated pressure mechanism
+  designed to improve optode-scalp contact through hair.
+keywords:
+  - neuroimaging
+  - fNIRS
+  - fDCS
+  - EEG
+  - multimodal
+  - infant language acquisition
+  - probe design
+license: MIT
+version: 1.0.0
